@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{#if site_title}}
+    <title>{{site_title}} | Web App</title>
+    {{else}}
+    <title>Web App</title>
+    {{/if}}
+
+    {{#if page_description}}
+    <meta name="Description" content="{{page_description}}">
+    {{/if}}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="stylesheet" href="/bundle/bundle.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="/">Web app</a></h1>
+
+        {{#if user}}
+        <nav class="side-nav">
+            <a href="/dashboard">Dashboard</a>
+            <form method="GET" action="/logout" class="disable-form-style">
+                <button type="submit">Logout</button>
+            </form>
+        </nav>
+        {{else}}
+        <nav class="side-nav">
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        </nav>
+        {{/if}}
+    </header>
+
+    <main>
+        {{{body}}}
+    </main>
+
+    <footer>
+        <a href="/tos">Terms of Service</a>&nbsp;-&nbsp;
+        <a href="/privacy">Privacy Policy</a>
+    </footer>
+</body>
+
+</html>

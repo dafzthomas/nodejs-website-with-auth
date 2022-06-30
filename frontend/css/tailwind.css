@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    body {
+        @apply p-5;
+    }
+
+    a[href] {
+        @apply text-blue-600;
+    }
+
+    input[type='text'] {
+        @apply shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md;
+    }
+}

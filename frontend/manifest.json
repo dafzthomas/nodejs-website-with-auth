@@ -1,0 +1,6 @@
+{
+    "name": "Application",
+    "display": "minimal-ui",
+    "scope": "/dashboard",
+    "start_url": "/login"
+}

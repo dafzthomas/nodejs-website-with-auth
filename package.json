@@ -1,0 +1,29 @@
+{
+    "name": "web-app",
+    "version": "0.0.1",
+    "description": "This is where I will be placing test nodejs stuff.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "build-styles": "",
+        "watch-styles": "npx tailwindcss -i ./frontend/css/tailwind.css -o ./frontend/build/tailwind.css --watch"
+    },
+    "dependencies": {
+        "@sendgrid/mail": "^7.4.6",
+        "body-parser": "^1.19.0",
+        "compression": "^1.7.4",
+        "connect-flash": "^0.1.1",
+        "connect-mongo": "^4.5.0",
+        "cookie-parser": "^1.4.5",
+        "date-fns": "^2.23.0",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-handlebars": "^5.3.3",
+        "express-session": "^1.17.2",
+        "mongoose": "^6.0.3",
+        "passport": "^0.4.1",
+        "passport-local-mongoose": "^6.1.0"
+    },
+    "author": "Dafydd Thomas",
+    "license": "ISC"
+}
